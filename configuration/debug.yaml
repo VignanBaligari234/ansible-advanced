@@ -1,0 +1,5 @@
+- name: ansible configuration
+  hosts: centos
+  tasks:
+    - name: print a message
+      ansible.builtin.shell: echo "this is ansible configuration" > /tmp/hello.txt
